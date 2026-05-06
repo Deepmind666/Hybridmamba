@@ -1,0 +1,37 @@
+diff --git a/external/mobilemamba/model/lib_mamba/csm_tritonk2.py b/external/mobilemamba/model/lib_mamba/csm_tritonk2.py
+--- a/external/mobilemamba/model/lib_mamba/csm_tritonk2.py
++++ b/external/mobilemamba/model/lib_mamba/csm_tritonk2.py
+@@
+ import torch
+ import warnings
+ import os
+-os.environ["TRITON_INTERPRET"] = "1"
++if os.environ.get("MAMBA_TRITON_INTERPRET", "0") == "1":
++    os.environ["TRITON_INTERPRET"] = "1"
++else:
++    os.environ.pop("TRITON_INTERPRET", None)
+ 
+ WITH_TRITON = True
+ # WITH_TRITON = False
+diff --git a/external/mobilemamba/util/util.py b/external/mobilemamba/util/util.py
+--- a/external/mobilemamba/util/util.py
++++ b/external/mobilemamba/util/util.py
+@@
+ from torchvision import datasets, transforms
+ # from mmcv import Config
+ # from mmcv.cnn.utils import get_model_complexity_info
+ # from mmcv.cnn.utils.flops_counter import flops_to_string, params_to_string
+ 
++def copy_file_without_metadata(src, dst):
++	shutil.copyfile(src, dst)
++
++
+ def str2bool(v):
+@@
+ 			logdir = '{}_{}_{}_{}'.format(cfg.trainer.name, cfg.model.name, cfg.data.type, time.strftime("%Y%m%d-%H%M%S"))
+ 			cfg.logdir = '{}/{}'.format(cfg.trainer.checkpoint, logdir)
+ 			os.makedirs(cfg.logdir, exist_ok=True)
+-			shutil.copy('{}.py'.format('/'.join(cfg.cfg_path.split('.'))), '{}/{}.py'.format(cfg.logdir, cfg.cfg_path.split('.')[-1]))
++			copy_file_without_metadata('{}.py'.format('/'.join(cfg.cfg_path.split('.'))), '{}/{}.py'.format(cfg.logdir, cfg.cfg_path.split('.')[-1]))
+ 		else:
+ 			cfg.logdir = None
