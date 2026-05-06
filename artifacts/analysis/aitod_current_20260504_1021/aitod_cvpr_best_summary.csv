@@ -1,0 +1,5 @@
+run,method,epoch_best,AP_best,AP50_best,AP75_best,AP_S_best,AP_M,epoch_latest,AP_latest,AP50_latest,AP75_latest,AP_S_latest,order
+C:\mamba\artifacts\runs\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154,TinyViM-B + RetinaNet,12,0.101,0.252,0.059,0.101,0.182,16,0.082,0.2,0.054,0.081,0
+C:\Users\sshuser\codex_runs\hybrid-mamba\artifacts\runs\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325,HybridMambaDet-B + RetinaNet,14,0.084,0.184,0.057,0.082,0.12,16,0.077,0.175,0.051,0.078,1
+C:\Users\sshuser\codex_runs\hybrid-mamba\artifacts\runs\fat_aitodv2_hybridmambadet_fusion05_72e_resume_mem14_repair1_correctresume_cmd_20260503_1605,"HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",14,0.079,0.178,0.053,0.077,0.142,14,0.079,0.178,0.053,0.077,2
+C:\mamba\artifacts\runs\local_aitodv2_hybridmamba_base_control_resume_mem10_20260502_0923,HybridMamba-B + RetinaNet,6,0.072,0.169,0.047,0.072,0.127,8,0.068,0.157,0.044,0.066,3

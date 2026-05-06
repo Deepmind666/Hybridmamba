@@ -1,0 +1,24 @@
+\section{Method}
+
+\subsection{Problem Setting}
+
+We target aerial small-object detection under a fixed RetinaNet + FPN detector. The backbone is the only algorithmic variable in the main experiments.
+
+\subsection{Frequency-Decoupled Hybrid Mamba}
+
+Given an intermediate feature map $x$, we compute a lightweight low-pass component and define the residual high-frequency component as the complement. The low-frequency part is routed to the Mamba branch, while the high-frequency part is processed by a lightweight detail branch.
+
+\subsection{Detail Branch}
+
+The detail branch uses parallel depthwise $3 \times 3$ and $5 \times 5$ convolutions, followed by an edge-aware gate and pointwise fusion. This branch is deliberately small: its role is to restore local high-frequency evidence rather than to replace the global modeling capacity of the Mamba branch.
+
+\subsection{Backbone Variants}
+
+We evaluate three backbone variants under the same detector:
+
+\begin{itemize}[leftmargin=1.5em]
+  \item TinyViM baseline
+  \item HybridMamba-Base, which keeps the low-frequency-only Mamba path
+  \item HybridMambaDet, which adds the lightweight high-frequency detail branch
+\end{itemize}
+

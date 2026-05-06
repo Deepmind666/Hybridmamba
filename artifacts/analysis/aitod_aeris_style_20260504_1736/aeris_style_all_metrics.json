@@ -1,0 +1,552 @@
+[
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_hybridmamba_base_control_mem10_20260502_0129",
+    "method": "HybridMamba-B + RetinaNet",
+    "epoch": 1,
+    "AP": 0.035,
+    "AP50": 0.096,
+    "AP75": 0.019,
+    "AP_S": 0.035,
+    "AP_M": 0.066
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_hybridmamba_base_control_mem10_20260502_0129",
+    "method": "HybridMamba-B + RetinaNet",
+    "epoch": 2,
+    "AP": 0.048,
+    "AP50": 0.12,
+    "AP75": 0.027,
+    "AP_S": 0.048,
+    "AP_M": 0.094
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_hybridmamba_base_control_mem10_20260502_0129",
+    "method": "HybridMamba-B + RetinaNet",
+    "epoch": 3,
+    "AP": 0.052,
+    "AP50": 0.128,
+    "AP75": 0.03,
+    "AP_S": 0.053,
+    "AP_M": 0.106
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_hybridmamba_base_control_resume_mem10_20260502_0923",
+    "method": "HybridMamba-B + RetinaNet",
+    "epoch": 4,
+    "AP": 0.061,
+    "AP50": 0.145,
+    "AP75": 0.039,
+    "AP_S": 0.061,
+    "AP_M": 0.129
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_hybridmamba_base_control_resume_mem10_20260502_0923",
+    "method": "HybridMamba-B + RetinaNet",
+    "epoch": 5,
+    "AP": 0.064,
+    "AP50": 0.158,
+    "AP75": 0.036,
+    "AP_S": 0.065,
+    "AP_M": 0.077
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_hybridmamba_base_control_resume_mem10_20260502_0923",
+    "method": "HybridMamba-B + RetinaNet",
+    "epoch": 6,
+    "AP": 0.072,
+    "AP50": 0.169,
+    "AP75": 0.047,
+    "AP_S": 0.072,
+    "AP_M": 0.127
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_hybridmamba_base_72e_resume_mem10_20260502_155411",
+    "method": "HybridMamba-B + RetinaNet",
+    "epoch": 7,
+    "AP": 0.06,
+    "AP50": 0.143,
+    "AP75": 0.039,
+    "AP_S": 0.06,
+    "AP_M": 0.098
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_hybridmamba_base_72e_resume_mem8_recover1_20260502_2018",
+    "method": "HybridMamba-B + RetinaNet",
+    "epoch": 8,
+    "AP": 0.068,
+    "AP50": 0.157,
+    "AP75": 0.044,
+    "AP_S": 0.066,
+    "AP_M": 0.138
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 1,
+    "AP": 0.024,
+    "AP50": 0.064,
+    "AP75": 0.011,
+    "AP_S": 0.023,
+    "AP_M": 0.047
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 2,
+    "AP": 0.05,
+    "AP50": 0.125,
+    "AP75": 0.028,
+    "AP_S": 0.05,
+    "AP_M": 0.079
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 3,
+    "AP": 0.062,
+    "AP50": 0.148,
+    "AP75": 0.039,
+    "AP_S": 0.063,
+    "AP_M": 0.092
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 4,
+    "AP": 0.07,
+    "AP50": 0.165,
+    "AP75": 0.044,
+    "AP_S": 0.07,
+    "AP_M": 0.107
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 5,
+    "AP": 0.07,
+    "AP50": 0.165,
+    "AP75": 0.043,
+    "AP_S": 0.069,
+    "AP_M": 0.113
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 6,
+    "AP": 0.073,
+    "AP50": 0.173,
+    "AP75": 0.047,
+    "AP_S": 0.073,
+    "AP_M": 0.115
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 7,
+    "AP": 0.067,
+    "AP50": 0.162,
+    "AP75": 0.041,
+    "AP_S": 0.067,
+    "AP_M": 0.116
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 8,
+    "AP": 0.081,
+    "AP50": 0.184,
+    "AP75": 0.055,
+    "AP_S": 0.079,
+    "AP_M": 0.138
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 9,
+    "AP": 0.078,
+    "AP50": 0.185,
+    "AP75": 0.049,
+    "AP_S": 0.078,
+    "AP_M": 0.114
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 10,
+    "AP": 0.077,
+    "AP50": 0.179,
+    "AP75": 0.049,
+    "AP_S": 0.079,
+    "AP_M": 0.111
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 11,
+    "AP": 0.081,
+    "AP50": 0.185,
+    "AP75": 0.06,
+    "AP_S": 0.08,
+    "AP_M": 0.124
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 12,
+    "AP": 0.076,
+    "AP50": 0.168,
+    "AP75": 0.053,
+    "AP_S": 0.076,
+    "AP_M": 0.106
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 13,
+    "AP": 0.067,
+    "AP50": 0.156,
+    "AP75": 0.04,
+    "AP_S": 0.067,
+    "AP_M": 0.098
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 14,
+    "AP": 0.084,
+    "AP50": 0.184,
+    "AP75": 0.057,
+    "AP_S": 0.082,
+    "AP_M": 0.12
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 15,
+    "AP": 0.08,
+    "AP50": 0.184,
+    "AP75": 0.056,
+    "AP_S": 0.078,
+    "AP_M": 0.13
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325",
+    "method": "HybridMambaDet-B + RetinaNet",
+    "epoch": 16,
+    "AP": 0.077,
+    "AP50": 0.175,
+    "AP75": 0.051,
+    "AP_S": 0.078,
+    "AP_M": 0.11
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_mem14_20260502_0133",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 1,
+    "AP": 0.025,
+    "AP50": 0.069,
+    "AP75": 0.013,
+    "AP_S": 0.025,
+    "AP_M": 0.048
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_mem14_20260502_0133",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 2,
+    "AP": 0.051,
+    "AP50": 0.125,
+    "AP75": 0.03,
+    "AP_S": 0.051,
+    "AP_M": 0.101
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_mem14_20260502_0133",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 3,
+    "AP": 0.06,
+    "AP50": 0.15,
+    "AP75": 0.034,
+    "AP_S": 0.062,
+    "AP_M": 0.078
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_resume_mem14_20260502_0923",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 4,
+    "AP": 0.065,
+    "AP50": 0.161,
+    "AP75": 0.036,
+    "AP_S": 0.064,
+    "AP_M": 0.1
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_resume_mem14_20260502_0923",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 5,
+    "AP": 0.068,
+    "AP50": 0.169,
+    "AP75": 0.039,
+    "AP_S": 0.069,
+    "AP_M": 0.082
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_resume_mem14_20260502_0923",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 6,
+    "AP": 0.059,
+    "AP50": 0.141,
+    "AP75": 0.04,
+    "AP_S": 0.06,
+    "AP_M": 0.074
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_resume_mem14_20260502_0923",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 7,
+    "AP": 0.07,
+    "AP50": 0.166,
+    "AP75": 0.044,
+    "AP_S": 0.072,
+    "AP_M": 0.109
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_resume_mem14_20260502_0923",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 8,
+    "AP": 0.072,
+    "AP50": 0.167,
+    "AP75": 0.05,
+    "AP_S": 0.072,
+    "AP_M": 0.123
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_72e_resume_mem14_repair1_20260502_1840",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 12,
+    "AP": 0.074,
+    "AP50": 0.169,
+    "AP75": 0.052,
+    "AP_S": 0.072,
+    "AP_M": 0.156
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_72e_resume_mem14_repair1_20260502_1840",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 13,
+    "AP": 0.071,
+    "AP50": 0.168,
+    "AP75": 0.046,
+    "AP_S": 0.071,
+    "AP_M": 0.12
+  },
+  {
+    "run": "C:\\Users\\sshuser\\codex_runs\\hybrid-mamba\\artifacts\\runs\\fat_aitodv2_hybridmambadet_fusion05_72e_resume_mem14_repair1_correctresume_cmd_20260503_1605",
+    "method": "HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",
+    "epoch": 14,
+    "AP": 0.079,
+    "AP50": 0.178,
+    "AP75": 0.053,
+    "AP_S": 0.077,
+    "AP_M": 0.142
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\analysis\\aitod_aeris_style_20260504_1736\\raw\\fat_tinyproto_train.log",
+    "method": "HybridMambaDet-B + RetinaNet, tiny-object protocol",
+    "epoch": 1,
+    "AP": 0.03,
+    "AP50": 0.087,
+    "AP75": 0.015,
+    "AP_S": 0.042,
+    "AP_M": 0.053
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\analysis\\aitod_aeris_style_20260504_1736\\raw\\fat_tinyproto_train.log",
+    "method": "HybridMambaDet-B + RetinaNet, tiny-object protocol",
+    "epoch": 2,
+    "AP": 0.049,
+    "AP50": 0.139,
+    "AP75": 0.032,
+    "AP_S": 0.058,
+    "AP_M": 0.049
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 1,
+    "AP": 0.012,
+    "AP50": 0.036,
+    "AP75": 0.004,
+    "AP_S": 0.014,
+    "AP_M": 0.006
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 2,
+    "AP": 0.04,
+    "AP50": 0.091,
+    "AP75": 0.026,
+    "AP_S": 0.044,
+    "AP_M": 0.039
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 3,
+    "AP": 0.057,
+    "AP50": 0.146,
+    "AP75": 0.032,
+    "AP_S": 0.059,
+    "AP_M": 0.106
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 4,
+    "AP": 0.044,
+    "AP50": 0.117,
+    "AP75": 0.023,
+    "AP_S": 0.055,
+    "AP_M": 0.046
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 5,
+    "AP": 0.087,
+    "AP50": 0.215,
+    "AP75": 0.049,
+    "AP_S": 0.085,
+    "AP_M": 0.156
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 6,
+    "AP": 0.089,
+    "AP50": 0.224,
+    "AP75": 0.053,
+    "AP_S": 0.088,
+    "AP_M": 0.143
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 7,
+    "AP": 0.073,
+    "AP50": 0.175,
+    "AP75": 0.046,
+    "AP_S": 0.074,
+    "AP_M": 0.116
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 8,
+    "AP": 0.067,
+    "AP50": 0.166,
+    "AP75": 0.039,
+    "AP_S": 0.068,
+    "AP_M": 0.158
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 9,
+    "AP": 0.082,
+    "AP50": 0.203,
+    "AP75": 0.052,
+    "AP_S": 0.082,
+    "AP_M": 0.142
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 10,
+    "AP": 0.092,
+    "AP50": 0.214,
+    "AP75": 0.062,
+    "AP_S": 0.091,
+    "AP_M": 0.165
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 11,
+    "AP": 0.098,
+    "AP50": 0.232,
+    "AP75": 0.062,
+    "AP_S": 0.095,
+    "AP_M": 0.172
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 12,
+    "AP": 0.101,
+    "AP50": 0.252,
+    "AP75": 0.059,
+    "AP_S": 0.101,
+    "AP_M": 0.182
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 13,
+    "AP": 0.085,
+    "AP50": 0.206,
+    "AP75": 0.056,
+    "AP_S": 0.085,
+    "AP_M": 0.13
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 14,
+    "AP": 0.089,
+    "AP50": 0.219,
+    "AP75": 0.055,
+    "AP_S": 0.09,
+    "AP_M": 0.154
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 15,
+    "AP": 0.081,
+    "AP50": 0.181,
+    "AP75": 0.06,
+    "AP_S": 0.079,
+    "AP_M": 0.165
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\runs\\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 16,
+    "AP": 0.082,
+    "AP50": 0.2,
+    "AP75": 0.054,
+    "AP_S": 0.081,
+    "AP_M": 0.144
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\analysis\\aitod_aeris_style_20260504_1736\\raw\\local_tinyvim_b_train.log",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 17,
+    "AP": 0.082,
+    "AP50": 0.196,
+    "AP75": 0.053,
+    "AP_S": 0.082,
+    "AP_M": 0.126
+  },
+  {
+    "run": "C:\\mamba\\artifacts\\analysis\\aitod_aeris_style_20260504_1736\\raw\\local_tinyvim_b_train.log",
+    "method": "TinyViM-B + RetinaNet",
+    "epoch": 18,
+    "AP": 0.069,
+    "AP50": 0.163,
+    "AP75": 0.045,
+    "AP_S": 0.068,
+    "AP_M": 0.141
+  }
+]

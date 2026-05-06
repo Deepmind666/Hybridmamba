@@ -1,0 +1,11 @@
+\section{Related Work}
+
+\paragraph{Vision Mamba for dense prediction.}
+TinyViM~\cite{tinyvim2024} provides the closest starting point because it explicitly argues that hybrid Vision Mamba can benefit from frequency decoupling. VMamba and related variants established the broader visual state space backbone line, while MambaOut sharpened the question of when Mamba is useful for vision tasks.
+
+\paragraph{Lightweight aerial detection.}
+For this project, the relevant comparison is not only against Mamba-family models, but also against efficient CNN or hybrid backbones used in aerial detection. The key distinction of our method is that it keeps the detector fixed and changes only the backbone-level handling of low-frequency and high-frequency information.
+
+\paragraph{Remote-sensing detail modeling.}
+Methods such as PKINet motivate the importance of local detail preservation in aerial scenes. Our design does not import a heavy remote-sensing block wholesale. Instead, it keeps the local branch intentionally small so that the gain can be discussed as a precision-efficiency trade-off.
+

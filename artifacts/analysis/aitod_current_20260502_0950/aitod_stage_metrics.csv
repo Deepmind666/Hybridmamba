@@ -1,0 +1,6 @@
+run,best_ap_points,latest_ap_points,best_epoch,latest_epoch,note,source
+TinyViM-B 1x,16.6,16.6,11,12,reference baseline,C:\mamba\artifacts\runs\aitodv2_tinyvim_b_fpn_1x_local_20260422_0142
+TinyViM retry,7.2,5.1,3,4,local retry baseline,C:\mamba\artifacts\runs\local_aitodv2_tinyvim_stable_retry_mem10_20260501_172729
+HybridMamba Base,5.2,5.2,3,3,initial control,C:\mamba\artifacts\runs\local_aitodv2_hybridmamba_base_control_mem10_20260502_0129
+HybridMambaDet stable,8.4,7.7,16,16,best remote Fat checkpoint,remote summary
+HybridMambaDet fusion05,6.0,6.0,3,3,current Fat snapshot,remote summary

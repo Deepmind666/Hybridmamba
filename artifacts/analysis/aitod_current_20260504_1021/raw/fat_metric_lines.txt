@@ -1,0 +1,55 @@
+﻿RUN=C:\Users\sshuser\codex_runs\hybrid-mamba\artifacts\runs\fat_aitodv2_hybridmambadet_stable_mem92_20260501_002325
+2026/05/01 01:32:30 - mmengine - INFO - bbox_mAP_copypaste: 0.024 0.064 0.011 0.023 0.047 -1.000
+2026/05/01 02:53:00 - mmengine - INFO - bbox_mAP_copypaste: 0.050 0.125 0.028 0.050 0.079 -1.000
+2026/05/01 04:22:42 - mmengine - INFO - bbox_mAP_copypaste: 0.062 0.148 0.039 0.063 0.092 -1.000
+2026/05/01 06:03:15 - mmengine - INFO - bbox_mAP_copypaste: 0.070 0.165 0.044 0.070 0.107 -1.000
+2026/05/01 07:38:49 - mmengine - INFO - bbox_mAP_copypaste: 0.070 0.165 0.043 0.069 0.113 -1.000
+2026/05/01 09:29:28 - mmengine - INFO - bbox_mAP_copypaste: 0.073 0.173 0.047 0.073 0.115 -1.000
+2026/05/01 11:18:18 - mmengine - INFO - bbox_mAP_copypaste: 0.067 0.162 0.041 0.067 0.116 -1.000
+2026/05/01 12:19:39 - mmengine - INFO - bbox_mAP_copypaste: 0.081 0.184 0.055 0.079 0.138 -1.000
+2026/05/01 13:22:12 - mmengine - INFO - bbox_mAP_copypaste: 0.078 0.185 0.049 0.078 0.114 -1.000
+2026/05/01 14:40:53 - mmengine - INFO - bbox_mAP_copypaste: 0.077 0.179 0.049 0.079 0.111 -1.000
+2026/05/01 16:16:43 - mmengine - INFO - bbox_mAP_copypaste: 0.081 0.185 0.060 0.080 0.124 -1.000
+2026/05/01 18:17:49 - mmengine - INFO - bbox_mAP_copypaste: 0.076 0.168 0.053 0.076 0.106 -1.000
+2026/05/01 20:21:55 - mmengine - INFO - bbox_mAP_copypaste: 0.067 0.156 0.040 0.067 0.098 -1.000
+2026/05/01 21:32:45 - mmengine - INFO - bbox_mAP_copypaste: 0.084 0.184 0.057 0.082 0.120 -1.000
+2026/05/01 23:11:12 - mmengine - INFO - bbox_mAP_copypaste: 0.080 0.184 0.056 0.078 0.130 -1.000
+2026/05/02 01:00:11 - mmengine - INFO - bbox_mAP_copypaste: 0.077 0.175 0.051 0.078 0.110 -1.000
+05/01 01:32:31 - mmengine - INFO - Epoch(val)   [1][2804/2804]  coco/bbox_mAP: 0.024  coco/bbox_mAP_50: 0.064  coco/bbox_mAP_75: 0.011  coco/bbox_mAP_s: 0.023  coco/bbox_mAP_m: 0.047  coco/bbox_mAP_l: -1.000
+05/01 02:53:00 - mmengine - INFO - Epoch(val)   [2][2804/2804]  coco/bbox_mAP: 0.050  coco/bbox_mAP_50: 0.125  coco/bbox_mAP_75: 0.028  coco/bbox_mAP_s: 0.050  coco/bbox_mAP_m: 0.079  coco/bbox_mAP_l: -1.000
+05/01 04:22:42 - mmengine - INFO - Epoch(val)   [3][2804/2804]  coco/bbox_mAP: 0.062  coco/bbox_mAP_50: 0.148  coco/bbox_mAP_75: 0.039  coco/bbox_mAP_s: 0.063  coco/bbox_mAP_m: 0.092  coco/bbox_mAP_l: -1.000
+05/01 06:03:15 - mmengine - INFO - Epoch(val)   [4][2804/2804]  coco/bbox_mAP: 0.070  coco/bbox_mAP_50: 0.165  coco/bbox_mAP_75: 0.044  coco/bbox_mAP_s: 0.070  coco/bbox_mAP_m: 0.107  coco/bbox_mAP_l: -1.000
+05/01 07:38:49 - mmengine - INFO - Epoch(val)   [5][2804/2804]  coco/bbox_mAP: 0.070  coco/bbox_mAP_50: 0.165  coco/bbox_mAP_75: 0.043  coco/bbox_mAP_s: 0.069  coco/bbox_mAP_m: 0.113  coco/bbox_mAP_l: -1.000
+05/01 09:29:28 - mmengine - INFO - Epoch(val)   [6][2804/2804]  coco/bbox_mAP: 0.073  coco/bbox_mAP_50: 0.173  coco/bbox_mAP_75: 0.047  coco/bbox_mAP_s: 0.073  coco/bbox_mAP_m: 0.115  coco/bbox_mAP_l: -1.000
+05/01 11:18:18 - mmengine - INFO - Epoch(val)   [7][2804/2804]  coco/bbox_mAP: 0.067  coco/bbox_mAP_50: 0.162  coco/bbox_mAP_75: 0.041  coco/bbox_mAP_s: 0.067  coco/bbox_mAP_m: 0.116  coco/bbox_mAP_l: -1.000
+05/01 12:19:39 - mmengine - INFO - Epoch(val)   [8][2804/2804]  coco/bbox_mAP: 0.081  coco/bbox_mAP_50: 0.184  coco/bbox_mAP_75: 0.055  coco/bbox_mAP_s: 0.079  coco/bbox_mAP_m: 0.138  coco/bbox_mAP_l: -1.000
+05/01 13:22:13 - mmengine - INFO - Epoch(val)   [9][2804/2804]  coco/bbox_mAP: 0.078  coco/bbox_mAP_50: 0.185  coco/bbox_mAP_75: 0.049  coco/bbox_mAP_s: 0.078  coco/bbox_mAP_m: 0.114  coco/bbox_mAP_l: -1.000
+05/01 14:40:53 - mmengine - INFO - Epoch(val)   [10][2804/2804]  coco/bbox_mAP: 0.077  coco/bbox_mAP_50: 0.179  coco/bbox_mAP_75: 0.049  coco/bbox_mAP_s: 0.079  coco/bbox_mAP_m: 0.111  coco/bbox_mAP_l: -1.000
+05/01 16:16:43 - mmengine - INFO - Epoch(val)   [11][2804/2804]  coco/bbox_mAP: 0.081  coco/bbox_mAP_50: 0.185  coco/bbox_mAP_75: 0.060  coco/bbox_mAP_s: 0.080  coco/bbox_mAP_m: 0.124  coco/bbox_mAP_l: -1.000
+05/01 18:17:49 - mmengine - INFO - Epoch(val)   [12][2804/2804]  coco/bbox_mAP: 0.076  coco/bbox_mAP_50: 0.168  coco/bbox_mAP_75: 0.053  coco/bbox_mAP_s: 0.076  coco/bbox_mAP_m: 0.106  coco/bbox_mAP_l: -1.000
+05/01 20:21:55 - mmengine - INFO - Epoch(val)   [13][2804/2804]  coco/bbox_mAP: 0.067  coco/bbox_mAP_50: 0.156  coco/bbox_mAP_75: 0.040  coco/bbox_mAP_s: 0.067  coco/bbox_mAP_m: 0.098  coco/bbox_mAP_l: -1.000
+05/01 21:32:45 - mmengine - INFO - Epoch(val)   [14][2804/2804]  coco/bbox_mAP: 0.084  coco/bbox_mAP_50: 0.184  coco/bbox_mAP_75: 0.057  coco/bbox_mAP_s: 0.082  coco/bbox_mAP_m: 0.120  coco/bbox_mAP_l: -1.000
+05/01 23:11:12 - mmengine - INFO - Epoch(val)   [15][2804/2804]  coco/bbox_mAP: 0.080  coco/bbox_mAP_50: 0.184  coco/bbox_mAP_75: 0.056  coco/bbox_mAP_s: 0.078  coco/bbox_mAP_m: 0.130  coco/bbox_mAP_l: -1.000
+05/02 01:00:11 - mmengine - INFO - Epoch(val)   [16][2804/2804]  coco/bbox_mAP: 0.077  coco/bbox_mAP_50: 0.175  coco/bbox_mAP_75: 0.051  coco/bbox_mAP_s: 0.078  coco/bbox_mAP_m: 0.110  coco/bbox_mAP_l: -1.000
+RUN=C:\Users\sshuser\codex_runs\hybrid-mamba\artifacts\runs\fat_aitodv2_hybridmambadet_fusion05_mem14_20260502_0133
+2026/05/02 02:41:47 - mmengine - INFO - bbox_mAP_copypaste: 0.025 0.069 0.013 0.025 0.048 -1.000
+2026/05/02 03:57:24 - mmengine - INFO - bbox_mAP_copypaste: 0.051 0.125 0.030 0.051 0.101 -1.000
+2026/05/02 05:14:39 - mmengine - INFO - bbox_mAP_copypaste: 0.060 0.150 0.034 0.062 0.078 -1.000
+05/02 02:41:47 - mmengine - INFO - Epoch(val)   [1][2804/2804]  coco/bbox_mAP: 0.025  coco/bbox_mAP_50: 0.069  coco/bbox_mAP_75: 0.013  coco/bbox_mAP_s: 0.025  coco/bbox_mAP_m: 0.048  coco/bbox_mAP_l: -1.000
+05/02 03:57:24 - mmengine - INFO - Epoch(val)   [2][2804/2804]  coco/bbox_mAP: 0.051  coco/bbox_mAP_50: 0.125  coco/bbox_mAP_75: 0.030  coco/bbox_mAP_s: 0.051  coco/bbox_mAP_m: 0.101  coco/bbox_mAP_l: -1.000
+05/02 05:14:39 - mmengine - INFO - Epoch(val)   [3][2804/2804]  coco/bbox_mAP: 0.060  coco/bbox_mAP_50: 0.150  coco/bbox_mAP_75: 0.034  coco/bbox_mAP_s: 0.062  coco/bbox_mAP_m: 0.078  coco/bbox_mAP_l: -1.000
+RUN=C:\Users\sshuser\codex_runs\hybrid-mamba\artifacts\runs\fat_aitodv2_hybridmambadet_fusion05_resume_mem14_20260502_0923
+2026/05/02 10:25:09 - mmengine - INFO - bbox_mAP_copypaste: 0.065 0.161 0.036 0.064 0.100 -1.000
+2026/05/02 11:22:47 - mmengine - INFO - bbox_mAP_copypaste: 0.068 0.169 0.039 0.069 0.082 -1.000
+2026/05/02 12:23:34 - mmengine - INFO - bbox_mAP_copypaste: 0.059 0.141 0.040 0.060 0.074 -1.000
+2026/05/02 13:33:26 - mmengine - INFO - bbox_mAP_copypaste: 0.070 0.166 0.044 0.072 0.109 -1.000
+2026/05/02 15:01:49 - mmengine - INFO - bbox_mAP_copypaste: 0.072 0.167 0.050 0.072 0.123 -1.000
+05/02 10:25:09 - mmengine - INFO - Epoch(val)   [4][2804/2804]  coco/bbox_mAP: 0.065  coco/bbox_mAP_50: 0.161  coco/bbox_mAP_75: 0.036  coco/bbox_mAP_s: 0.064  coco/bbox_mAP_m: 0.100  coco/bbox_mAP_l: -1.000
+05/02 11:22:47 - mmengine - INFO - Epoch(val)   [5][2804/2804]  coco/bbox_mAP: 0.068  coco/bbox_mAP_50: 0.169  coco/bbox_mAP_75: 0.039  coco/bbox_mAP_s: 0.069  coco/bbox_mAP_m: 0.082  coco/bbox_mAP_l: -1.000
+05/02 12:23:34 - mmengine - INFO - Epoch(val)   [6][2804/2804]  coco/bbox_mAP: 0.059  coco/bbox_mAP_50: 0.141  coco/bbox_mAP_75: 0.040  coco/bbox_mAP_s: 0.060  coco/bbox_mAP_m: 0.074  coco/bbox_mAP_l: -1.000
+05/02 13:33:26 - mmengine - INFO - Epoch(val)   [7][2804/2804]  coco/bbox_mAP: 0.070  coco/bbox_mAP_50: 0.166  coco/bbox_mAP_75: 0.044  coco/bbox_mAP_s: 0.072  coco/bbox_mAP_m: 0.109  coco/bbox_mAP_l: -1.000
+05/02 15:01:49 - mmengine - INFO - Epoch(val)   [8][2804/2804]  coco/bbox_mAP: 0.072  coco/bbox_mAP_50: 0.167  coco/bbox_mAP_75: 0.050  coco/bbox_mAP_s: 0.072  coco/bbox_mAP_m: 0.123  coco/bbox_mAP_l: -1.000
+RUN=C:\Users\sshuser\codex_runs\hybrid-mamba\artifacts\runs\fat_aitodv2_hybridmambadet_fusion05_72e_resume_mem14_repair1_20260502_1840
+RUN=C:\Users\sshuser\codex_runs\hybrid-mamba\artifacts\runs\fat_aitodv2_hybridmambadet_fusion05_72e_resume_mem14_repair1_correctresume_cmd_20260503_1605
+2026/05/03 21:16:24 - mmengine - INFO - bbox_mAP_copypaste: 0.079 0.178 0.053 0.077 0.142 -1.000
+05/03 21:16:24 - mmengine - INFO - Epoch(val)   [14][2804/2804]  coco/bbox_mAP: 0.079  coco/bbox_mAP_50: 0.178  coco/bbox_mAP_75: 0.053  coco/bbox_mAP_s: 0.077  coco/bbox_mAP_m: 0.142  coco/bbox_mAP_l: -1.000

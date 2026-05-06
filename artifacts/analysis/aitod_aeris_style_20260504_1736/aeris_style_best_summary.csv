@@ -1,0 +1,6 @@
+method,display,axis_display,epoch_best,AP_best,AP50_best,AP75_best,AP_S_best,epoch_latest,AP_latest,ongoing,gap_vs_tinyvim
+TinyViM-B + RetinaNet,TinyViM-B,TinyViM-B,12,0.101,0.252,0.059,0.101,18,0.069,False,0.0
+HybridMambaDet-B + RetinaNet,HybridMambaDet-B,HybridMambaDet-B,14,0.084,0.184,0.057,0.082,16,0.077,False,-0.017
+"HybridMambaDet-B + RetinaNet, detail fusion alpha=0.5",HybridMambaDet-B alpha=0.5,HybridMambaDet alpha=0.5,14,0.079,0.178,0.053,0.077,14,0.079,False,-0.022000000000000006
+"HybridMambaDet-B + RetinaNet, tiny-object protocol",HybridMambaDet-B tiny-object,HybridMambaDet tiny,2,0.049,0.139,0.032,0.058,2,0.049,True,-0.052000000000000005
+HybridMamba-B + RetinaNet,HybridMamba-B,HybridMamba-B,6,0.072,0.169,0.047,0.072,8,0.068,False,-0.029000000000000012

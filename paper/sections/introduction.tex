@@ -1,0 +1,8 @@
+\section{Introduction}
+
+Lightweight Vision Mamba backbones are attractive for dense visual tasks because they retain long-range modeling ability at moderate cost. However, this advantage does not automatically translate into aerial small-object detection. In UAV imagery, the discriminative evidence of tiny targets often lies in high-frequency local cues such as edges, fine textures, and local contrast transitions. A backbone that is biased toward low-frequency global structure can therefore miss the signal that matters most.
+
+This project studies a narrower question than generic backbone design: how to make a lightweight hybrid Mamba backbone better suited to aerial small-object detection without adding a heavy local branch or detector-side tricks. Our working hypothesis is that the Mamba branch should focus on low-frequency global context, while a very small detail branch restores the high-frequency information that Mamba under-serves.
+
+Our implementation target is a controlled \textbf{RetinaNet + FPN} setting across VisDrone, AI-TOD-v2, and DOTA-HBB. This keeps the paper centered on backbone behavior rather than detector innovation.
+

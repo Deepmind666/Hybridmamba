@@ -1,0 +1,67 @@
+[
+  {
+    "key": "tinyvim_iccv2025",
+    "title": "TinyViM: Frequency Decoupling for Tiny Hybrid Vision Mamba",
+    "category": "core-method",
+    "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Ma_TinyViM_Frequency_Decoupling_for_Tiny_Hybrid_Vision_Mamba_ICCV_2025_paper.pdf",
+    "source_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Ma_TinyViM_Frequency_Decoupling_for_Tiny_Hybrid_Vision_Mamba_ICCV_2025_paper.html",
+    "filename": "tinyvim_iccv2025.pdf"
+  },
+  {
+    "key": "mobilemamba_cvpr2025",
+    "title": "MobileMamba: Lightweight Multi-Receptive Visual Mamba Network",
+    "category": "core-baseline",
+    "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/He_MobileMamba_Lightweight_Multi-Receptive_Visual_Mamba_Network_CVPR_2025_paper.pdf",
+    "source_url": "https://openaccess.thecvf.com/content/CVPR2025/html/He_MobileMamba_Lightweight_Multi-Receptive_Visual_Mamba_Network_CVPR_2025_paper.html",
+    "filename": "mobilemamba_cvpr2025.pdf"
+  },
+  {
+    "key": "mambaout_cvpr2025",
+    "title": "MambaOut: Do We Really Need Mamba for Vision?",
+    "category": "task-positioning",
+    "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Yu_MambaOut_Do_We_Really_Need_Mamba_for_Vision_CVPR_2025_paper.pdf",
+    "source_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yu_MambaOut_Do_We_Really_Need_Mamba_for_Vision_CVPR_2025_paper.html",
+    "filename": "mambaout_cvpr2025.pdf"
+  },
+  {
+    "key": "pkinet_cvpr2024",
+    "title": "Poly Kernel Inception Network for Remote Sensing Detection",
+    "category": "aerial-baseline",
+    "pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Cai_Poly_Kernel_Inception_Network_for_Remote_Sensing_Detection_CVPR_2024_paper.pdf",
+    "source_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Cai_Poly_Kernel_Inception_Network_for_Remote_Sensing_Detection_CVPR_2024_paper.html",
+    "filename": "pkinet_cvpr2024.pdf"
+  },
+  {
+    "key": "vmamba_neurips2024",
+    "title": "VMamba: Visual State Space Model",
+    "category": "mamba-family",
+    "pdf_url": "https://papers.neurips.cc/paper_files/paper/2024/file/baa2da9ae4bfed26520bb61d259a3653-Paper-Conference.pdf",
+    "source_url": "https://nips.cc/virtual/2024/poster/94617",
+    "filename": "vmamba_neurips2024.pdf"
+  },
+  {
+    "key": "nwd_aitodv2",
+    "title": "Detecting Tiny Objects in Aerial Images: A Normalized Wasserstein Distance and a New Benchmark",
+    "category": "dataset-benchmark",
+    "pdf_url": "https://arxiv.org/pdf/2206.13996.pdf",
+    "source_url": "https://arxiv.org/abs/2206.13996",
+    "filename": "nwd_aitodv2_arxiv.pdf"
+  },
+  {
+    "key": "visdrone_repo",
+    "title": "VisDrone Official Dataset Repository",
+    "category": "dataset-resource",
+    "pdf_url": "",
+    "source_url": "https://github.com/VisDrone/VisDrone-Dataset",
+    "filename": "visdrone_repo.txt"
+  },
+  {
+    "key": "aitodv2_page",
+    "title": "AI-TOD-v2 Official Page",
+    "category": "dataset-resource",
+    "pdf_url": "",
+    "source_url": "https://chasel-tsui.github.io/AI-TOD-v2/",
+    "filename": "aitodv2_page.html"
+  }
+]
+

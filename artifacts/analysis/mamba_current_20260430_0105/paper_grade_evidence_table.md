@@ -1,0 +1,9 @@
+| Run | Host | Fat comparable | Status | Best epoch | AP | AP_S | AP_L | Verdict |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| TinyViM-B | Fat | True | complete | 12 | 20.4 | 12.4 | 34.7 | Fat baseline |
+| HybridMamba-Base | Fat | True | complete | 12 | 20.2 | 12.2 | 34.3 | Mamba baseline |
+| HybridMambaDet | Fat | True | complete | 12 | 20.4 | 12.5 | 32.4 | weak positive AP_S, AP_L penalty |
+| Fusion alpha=1.0 | Fat | True | stopped | 12 | 20.3 | 12.3 | 33.0 | no clean Fat win |
+| Stage shallow | Local | False | stopped | 13 | 20.2 | 12.2 | 33.8 | negative/weak local branch |
+| TinyViM-B local best | Local | False | partial | 9 | 20.8 | 12.6 | 32.6 | local reference only |
+| Fusion alpha=0.5 | Local | False | complete | 13 | 20.6 | 12.7 | 32.7 | local-only signal |

@@ -1,0 +1,50 @@
+{
+  "best_model_currently": "HybridMamba-Base_B",
+  "results": [
+    {
+      "dataset": "VisDrone2019-DET val",
+      "model": "TinyViM_B",
+      "variant": "Original TinyViM backbone",
+      "stack": "MMDet3 + CUDA 12.8",
+      "source_type": "eval_metrics.json",
+      "source_path": "C:\\mamba\\artifacts\\runs\\visdrone_tinyvim_b_mmdet3_20260420_1408\\eval_metrics.json",
+      "step": "12",
+      "bbox_mAP": "0.007",
+      "bbox_mAP_50": "0.019",
+      "bbox_mAP_75": "0.004",
+      "bbox_mAP_s": "0.001",
+      "bbox_mAP_m": "0.01",
+      "bbox_mAP_l": "0.039"
+    },
+    {
+      "dataset": "VisDrone2019-DET val",
+      "model": "HybridMamba-Base_B",
+      "variant": "Low-frequency Mamba only",
+      "stack": "MMDet3 + CUDA 12.8",
+      "source_type": "eval_metrics.json",
+      "source_path": "C:\\mamba\\artifacts\\runs\\visdrone_hybridmamba_base_b_mmdet3_20260420_1635\\eval_metrics.json",
+      "step": "12",
+      "bbox_mAP": "0.015",
+      "bbox_mAP_50": "0.035",
+      "bbox_mAP_75": "0.011",
+      "bbox_mAP_s": "0.002",
+      "bbox_mAP_m": "0.024",
+      "bbox_mAP_l": "0.06"
+    },
+    {
+      "dataset": "VisDrone2019-DET val",
+      "model": "HybridMambaDet_B",
+      "variant": "Low-frequency Mamba + detail branch",
+      "stack": "MMDet3 + CUDA 12.8 (FatMachine)",
+      "source_type": "remote_launcher.log",
+      "source_path": "C:\\mamba\\artifacts\\tmp_validation\\remote_visdrone_hybridmambadet_launcher.log",
+      "step": "12",
+      "bbox_mAP": "0.012",
+      "bbox_mAP_50": "0.029",
+      "bbox_mAP_75": "0.008",
+      "bbox_mAP_s": "0.002",
+      "bbox_mAP_m": "0.02",
+      "bbox_mAP_l": "0.054"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+﻿RUN=C:\mamba\artifacts\runs\local_aitodv2_tinyvim_b_72e_sameprotocol_mem8_20260502_2154
+2026/05/02 23:40:19 - mmengine - INFO - bbox_mAP_copypaste: 0.012 0.036 0.004 0.014 0.006 -1.000
+2026/05/03 01:46:54 - mmengine - INFO - bbox_mAP_copypaste: 0.040 0.091 0.026 0.044 0.039 -1.000
+2026/05/03 04:05:33 - mmengine - INFO - bbox_mAP_copypaste: 0.057 0.146 0.032 0.059 0.106 -1.000
+2026/05/03 06:21:35 - mmengine - INFO - bbox_mAP_copypaste: 0.044 0.117 0.023 0.055 0.046 -1.000
+2026/05/03 08:51:10 - mmengine - INFO - bbox_mAP_copypaste: 0.087 0.215 0.049 0.085 0.156 -1.000
+2026/05/03 11:18:50 - mmengine - INFO - bbox_mAP_copypaste: 0.089 0.224 0.053 0.088 0.143 -1.000
+2026/05/03 12:18:26 - mmengine - INFO - bbox_mAP_copypaste: 0.073 0.175 0.046 0.074 0.116 -1.000
+2026/05/03 13:20:55 - mmengine - INFO - bbox_mAP_copypaste: 0.067 0.166 0.039 0.068 0.158 -1.000
+2026/05/03 15:32:51 - mmengine - INFO - bbox_mAP_copypaste: 0.082 0.203 0.052 0.082 0.142 -1.000
+2026/05/03 18:03:57 - mmengine - INFO - bbox_mAP_copypaste: 0.092 0.214 0.062 0.091 0.165 -1.000
+2026/05/03 21:04:15 - mmengine - INFO - bbox_mAP_copypaste: 0.098 0.232 0.062 0.095 0.172 -1.000
+2026/05/03 23:19:47 - mmengine - INFO - bbox_mAP_copypaste: 0.101 0.252 0.059 0.101 0.182 -1.000
+2026/05/04 01:59:16 - mmengine - INFO - bbox_mAP_copypaste: 0.085 0.206 0.056 0.085 0.130 -1.000
+2026/05/04 04:20:58 - mmengine - INFO - bbox_mAP_copypaste: 0.089 0.219 0.055 0.090 0.154 -1.000
+2026/05/04 06:53:24 - mmengine - INFO - bbox_mAP_copypaste: 0.081 0.181 0.060 0.079 0.165 -1.000
+2026/05/04 09:34:44 - mmengine - INFO - bbox_mAP_copypaste: 0.082 0.200 0.054 0.081 0.144 -1.000
+05/02 23:40:19 - mmengine - INFO - Epoch(val)   [1][2804/2804]  coco/bbox_mAP: 0.012  coco/bbox_mAP_50: 0.036  coco/bbox_mAP_75: 0.004  coco/bbox_mAP_s: 0.014  coco/bbox_mAP_m: 0.006  coco/bbox_mAP_l: -1.000
+05/03 01:46:54 - mmengine - INFO - Epoch(val)   [2][2804/2804]  coco/bbox_mAP: 0.040  coco/bbox_mAP_50: 0.091  coco/bbox_mAP_75: 0.026  coco/bbox_mAP_s: 0.044  coco/bbox_mAP_m: 0.039  coco/bbox_mAP_l: -1.000
+05/03 04:05:33 - mmengine - INFO - Epoch(val)   [3][2804/2804]  coco/bbox_mAP: 0.057  coco/bbox_mAP_50: 0.146  coco/bbox_mAP_75: 0.032  coco/bbox_mAP_s: 0.059  coco/bbox_mAP_m: 0.106  coco/bbox_mAP_l: -1.000
+05/03 06:21:35 - mmengine - INFO - Epoch(val)   [4][2804/2804]  coco/bbox_mAP: 0.044  coco/bbox_mAP_50: 0.117  coco/bbox_mAP_75: 0.023  coco/bbox_mAP_s: 0.055  coco/bbox_mAP_m: 0.046  coco/bbox_mAP_l: -1.000
+05/03 08:51:10 - mmengine - INFO - Epoch(val)   [5][2804/2804]  coco/bbox_mAP: 0.087  coco/bbox_mAP_50: 0.215  coco/bbox_mAP_75: 0.049  coco/bbox_mAP_s: 0.085  coco/bbox_mAP_m: 0.156  coco/bbox_mAP_l: -1.000
+05/03 11:18:50 - mmengine - INFO - Epoch(val)   [6][2804/2804]  coco/bbox_mAP: 0.089  coco/bbox_mAP_50: 0.224  coco/bbox_mAP_75: 0.053  coco/bbox_mAP_s: 0.088  coco/bbox_mAP_m: 0.143  coco/bbox_mAP_l: -1.000
+05/03 12:18:26 - mmengine - INFO - Epoch(val)   [7][2804/2804]  coco/bbox_mAP: 0.073  coco/bbox_mAP_50: 0.175  coco/bbox_mAP_75: 0.046  coco/bbox_mAP_s: 0.074  coco/bbox_mAP_m: 0.116  coco/bbox_mAP_l: -1.000
+05/03 13:20:55 - mmengine - INFO - Epoch(val)   [8][2804/2804]  coco/bbox_mAP: 0.067  coco/bbox_mAP_50: 0.166  coco/bbox_mAP_75: 0.039  coco/bbox_mAP_s: 0.068  coco/bbox_mAP_m: 0.158  coco/bbox_mAP_l: -1.000
+05/03 15:32:51 - mmengine - INFO - Epoch(val)   [9][2804/2804]  coco/bbox_mAP: 0.082  coco/bbox_mAP_50: 0.203  coco/bbox_mAP_75: 0.052  coco/bbox_mAP_s: 0.082  coco/bbox_mAP_m: 0.142  coco/bbox_mAP_l: -1.000
+05/03 18:03:57 - mmengine - INFO - Epoch(val)   [10][2804/2804]  coco/bbox_mAP: 0.092  coco/bbox_mAP_50: 0.214  coco/bbox_mAP_75: 0.062  coco/bbox_mAP_s: 0.091  coco/bbox_mAP_m: 0.165  coco/bbox_mAP_l: -1.000
+05/03 21:04:15 - mmengine - INFO - Epoch(val)   [11][2804/2804]  coco/bbox_mAP: 0.098  coco/bbox_mAP_50: 0.232  coco/bbox_mAP_75: 0.062  coco/bbox_mAP_s: 0.095  coco/bbox_mAP_m: 0.172  coco/bbox_mAP_l: -1.000
+05/03 23:19:47 - mmengine - INFO - Epoch(val)   [12][2804/2804]  coco/bbox_mAP: 0.101  coco/bbox_mAP_50: 0.252  coco/bbox_mAP_75: 0.059  coco/bbox_mAP_s: 0.101  coco/bbox_mAP_m: 0.182  coco/bbox_mAP_l: -1.000
+05/04 01:59:16 - mmengine - INFO - Epoch(val)   [13][2804/2804]  coco/bbox_mAP: 0.085  coco/bbox_mAP_50: 0.206  coco/bbox_mAP_75: 0.056  coco/bbox_mAP_s: 0.085  coco/bbox_mAP_m: 0.130  coco/bbox_mAP_l: -1.000
+05/04 04:20:58 - mmengine - INFO - Epoch(val)   [14][2804/2804]  coco/bbox_mAP: 0.089  coco/bbox_mAP_50: 0.219  coco/bbox_mAP_75: 0.055  coco/bbox_mAP_s: 0.090  coco/bbox_mAP_m: 0.154  coco/bbox_mAP_l: -1.000
+05/04 06:53:24 - mmengine - INFO - Epoch(val)   [15][2804/2804]  coco/bbox_mAP: 0.081  coco/bbox_mAP_50: 0.181  coco/bbox_mAP_75: 0.060  coco/bbox_mAP_s: 0.079  coco/bbox_mAP_m: 0.165  coco/bbox_mAP_l: -1.000
+05/04 09:34:44 - mmengine - INFO - Epoch(val)   [16][2804/2804]  coco/bbox_mAP: 0.082  coco/bbox_mAP_50: 0.200  coco/bbox_mAP_75: 0.054  coco/bbox_mAP_s: 0.081  coco/bbox_mAP_m: 0.144  coco/bbox_mAP_l: -1.000
+RUN=C:\mamba\artifacts\runs\local_aitodv2_hybridmamba_base_control_mem10_20260502_0129
+2026/05/02 03:01:46 - mmengine - INFO - bbox_mAP_copypaste: 0.035 0.096 0.019 0.035 0.066 -1.000
+2026/05/02 04:22:58 - mmengine - INFO - bbox_mAP_copypaste: 0.048 0.120 0.027 0.048 0.094 -1.000
+2026/05/02 06:01:12 - mmengine - INFO - bbox_mAP_copypaste: 0.052 0.128 0.030 0.053 0.106 -1.000
+05/02 03:01:46 - mmengine - INFO - Epoch(val)   [1][2804/2804]  coco/bbox_mAP: 0.035  coco/bbox_mAP_50: 0.096  coco/bbox_mAP_75: 0.019  coco/bbox_mAP_s: 0.035  coco/bbox_mAP_m: 0.066  coco/bbox_mAP_l: -1.000
+05/02 04:22:58 - mmengine - INFO - Epoch(val)   [2][2804/2804]  coco/bbox_mAP: 0.048  coco/bbox_mAP_50: 0.120  coco/bbox_mAP_75: 0.027  coco/bbox_mAP_s: 0.048  coco/bbox_mAP_m: 0.094  coco/bbox_mAP_l: -1.000
+05/02 06:01:12 - mmengine - INFO - Epoch(val)   [3][2804/2804]  coco/bbox_mAP: 0.052  coco/bbox_mAP_50: 0.128  coco/bbox_mAP_75: 0.030  coco/bbox_mAP_s: 0.053  coco/bbox_mAP_m: 0.106  coco/bbox_mAP_l: -1.000
+RUN=C:\mamba\artifacts\runs\local_aitodv2_hybridmamba_base_control_resume_mem10_20260502_0923
+2026/05/02 10:38:13 - mmengine - INFO - bbox_mAP_copypaste: 0.061 0.145 0.039 0.061 0.129 -1.000
+2026/05/02 12:04:09 - mmengine - INFO - bbox_mAP_copypaste: 0.064 0.158 0.036 0.065 0.077 -1.000
+2026/05/02 13:50:28 - mmengine - INFO - bbox_mAP_copypaste: 0.072 0.169 0.047 0.072 0.127 -1.000
+05/02 10:38:13 - mmengine - INFO - Epoch(val)   [4][2804/2804]  coco/bbox_mAP: 0.061  coco/bbox_mAP_50: 0.145  coco/bbox_mAP_75: 0.039  coco/bbox_mAP_s: 0.061  coco/bbox_mAP_m: 0.129  coco/bbox_mAP_l: -1.000
+05/02 12:04:09 - mmengine - INFO - Epoch(val)   [5][2804/2804]  coco/bbox_mAP: 0.064  coco/bbox_mAP_50: 0.158  coco/bbox_mAP_75: 0.036  coco/bbox_mAP_s: 0.065  coco/bbox_mAP_m: 0.077  coco/bbox_mAP_l: -1.000
+05/02 13:50:28 - mmengine - INFO - Epoch(val)   [6][2804/2804]  coco/bbox_mAP: 0.072  coco/bbox_mAP_50: 0.169  coco/bbox_mAP_75: 0.047  coco/bbox_mAP_s: 0.072  coco/bbox_mAP_m: 0.127  coco/bbox_mAP_l: -1.000
+RUN=C:\mamba\artifacts\runs\local_aitodv2_hybridmamba_base_72e_resume_mem10_20260502_155411
+2026/05/02 18:22:28 - mmengine - INFO - bbox_mAP_copypaste: 0.060 0.143 0.039 0.060 0.098 -1.000
+05/02 18:22:28 - mmengine - INFO - Epoch(val)   [7][2804/2804]  coco/bbox_mAP: 0.060  coco/bbox_mAP_50: 0.143  coco/bbox_mAP_75: 0.039  coco/bbox_mAP_s: 0.060  coco/bbox_mAP_m: 0.098  coco/bbox_mAP_l: -1.000
+RUN=C:\mamba\artifacts\runs\local_aitodv2_hybridmamba_base_72e_resume_mem8_recover1_20260502_2018
+2026/05/02 21:40:36 - mmengine - INFO - bbox_mAP_copypaste: 0.068 0.157 0.044 0.066 0.138 -1.000
+05/02 21:40:36 - mmengine - INFO - Epoch(val)   [8][2804/2804]  coco/bbox_mAP: 0.068  coco/bbox_mAP_50: 0.157  coco/bbox_mAP_75: 0.044  coco/bbox_mAP_s: 0.066  coco/bbox_mAP_m: 0.138  coco/bbox_mAP_l: -1.000
+RUN=C:\mamba\artifacts\runs\local_aitodv2_tinyvim_stable_retry_mem10_20260501_172729
+2026/05/01 18:51:39 - mmengine - INFO - bbox_mAP_copypaste: 0.072 0.181 0.043 0.073 0.105 -1.000
+2026/05/01 21:12:33 - mmengine - INFO - bbox_mAP_copypaste: 0.051 0.124 0.029 0.051 0.079 -1.000
+05/01 18:51:39 - mmengine - INFO - Epoch(val)   [3][2804/2804]  coco/bbox_mAP: 0.072  coco/bbox_mAP_50: 0.181  coco/bbox_mAP_75: 0.043  coco/bbox_mAP_s: 0.073  coco/bbox_mAP_m: 0.105  coco/bbox_mAP_l: -1.000
+05/01 21:12:33 - mmengine - INFO - Epoch(val)   [4][2804/2804]  coco/bbox_mAP: 0.051  coco/bbox_mAP_50: 0.124  coco/bbox_mAP_75: 0.029  coco/bbox_mAP_s: 0.051  coco/bbox_mAP_m: 0.079  coco/bbox_mAP_l: -1.000
+RUN=C:\mamba\artifacts\runs\local_aitodv2_tinyvim_stable_retry_mem12_20260501_013258
+2026/05/01 05:17:48 - mmengine - INFO - bbox_mAP_copypaste: 0.011 0.033 0.005 0.020 0.003 -1.000
+2026/05/01 08:42:53 - mmengine - INFO - bbox_mAP_copypaste: 0.024 0.063 0.013 0.031 0.027 -1.000
+05/01 05:17:49 - mmengine - INFO - Epoch(val)   [1][2804/2804]  coco/bbox_mAP: 0.011  coco/bbox_mAP_50: 0.033  coco/bbox_mAP_75: 0.005  coco/bbox_mAP_s: 0.020  coco/bbox_mAP_m: 0.003  coco/bbox_mAP_l: -1.000
+05/01 08:42:54 - mmengine - INFO - Epoch(val)   [2][2804/2804]  coco/bbox_mAP: 0.024  coco/bbox_mAP_50: 0.063  coco/bbox_mAP_75: 0.013  coco/bbox_mAP_s: 0.031  coco/bbox_mAP_m: 0.027  coco/bbox_mAP_l: -1.000

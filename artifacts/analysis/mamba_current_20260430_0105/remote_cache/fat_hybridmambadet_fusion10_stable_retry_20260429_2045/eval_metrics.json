@@ -1,0 +1,25 @@
+{
+  "status": "ok",
+  "epoch": 25,
+  "iter": 161775,
+  "latest": {
+    "coco/bbox_mAP": 0.202,
+    "coco/bbox_mAP_50": 0.34,
+    "coco/bbox_mAP_75": 0.21,
+    "coco/bbox_mAP_s": 0.122,
+    "coco/bbox_mAP_m": 0.299,
+    "coco/bbox_mAP_l": 0.324
+  },
+  "best_epoch": 12,
+  "best": {
+    "coco/bbox_mAP": 0.203,
+    "coco/bbox_mAP_50": 0.341,
+    "coco/bbox_mAP_75": 0.213,
+    "coco/bbox_mAP_s": 0.123,
+    "coco/bbox_mAP_m": 0.301,
+    "coco/bbox_mAP_l": 0.33
+  },
+  "best_key": "coco/bbox_mAP",
+  "best_value": 0.203,
+  "manual_loop": true
+}

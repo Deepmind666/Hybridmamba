@@ -1,0 +1,32 @@
+﻿{
+  "run_id": "fat_hybridmambadet_fusion10_stable_retry_20260429_2045",
+  "config": "/mnt/c/Users/sshuser/codex_runs/hybrid-mamba/code/tinyvim/detection/configs_v3/retinanet_hybridmambadet_b_fpn_1x_visdrone_es_fusion10_stable.py",
+  "work_dir": "/mnt/c/Users/sshuser/codex_runs/hybrid-mamba/artifacts/runs/fat_hybridmambadet_fusion10_stable_retry_20260429_2045",
+  "dataset": "annotations",
+  "dataset_config": "retinanet_hybridmambadet_b_fpn_1x_visdrone_es_fusion10_stable",
+  "model": "HybridMambaDet_B",
+  "detector": "RetinaNet",
+  "stack": "mmdet3-cu128-blackwell-manual",
+  "backbone_type": "HybridMambaDet_B",
+  "backbone_init_checkpoint": "../../../weights/tinyvim/tinyvim_b_300e.pth",
+  "max_epochs": 120,
+  "seed": 42,
+  "created_at": "2026-04-29 20:42:31",
+  "torch_version": "2.7.1+cu128",
+  "cuda_version": "12.8",
+  "device_capability": [
+    12,
+    0
+  ],
+  "manual_train_loop": true,
+  "adaptive_guard": {
+    "enabled": true,
+    "gpu_util_pct": 80.0,
+    "cpu_util_pct": 80.0,
+    "resume_util_pct": 70.0,
+    "temp_c": 78.0,
+    "memory_pct": 92.0,
+    "check_interval_sec": 2.0,
+    "cooldown_sec": 20.0
+  }
+}

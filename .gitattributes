@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.docx binary
+*.pth binary
+*.pt binary
+*.ckpt binary
+*.tar binary
+*.gz binary
+*.zip binary
+*.whl binary

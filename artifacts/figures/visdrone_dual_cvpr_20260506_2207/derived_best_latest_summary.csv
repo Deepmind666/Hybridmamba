@@ -1,0 +1,3 @@
+method,best_AP,best_AP_epoch,best_AP50,best_AP50_epoch,best_AP75,best_AP75_epoch,best_AP_S,best_AP_S_epoch,best_AP_M,best_AP_M_epoch,best_AP_L,best_AP_L_epoch,latest_AP,latest_AP50,latest_AP75,latest_AP_S,latest_AP_M,latest_AP_L,latest_epoch
+TinyViM-B + RetinaNet,22.6,69,37.3,68,23.5,69,14.9,69,32.9,68,31.7,71,19.9,33.2,20.9,12.9,29.0,27.800000000000004,100
+MobileMamba-B1 + RetinaNet,12.3,42,22.5,42,12.3,43,4.7,42,21.6,24,31.9,14,12.1,21.9,12.0,4.5,20.8,27.1,62

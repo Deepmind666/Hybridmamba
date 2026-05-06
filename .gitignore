@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+.mamba-env/
+.mamba-env-cu128/
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.vscode/
+*.code-workspace
+.claude/
+.codex/
+.upstream_git/
+
+# Data and weights: never publish local datasets or model binaries
+data/*
+!data/README.md
+weights/*
+!weights/README.md
+
+# Experiment artifacts: publish lightweight summaries and figures only
+artifacts/*
+!artifacts/README.md
+!artifacts/analysis/
+!artifacts/analysis/**
+!artifacts/figures/
+!artifacts/figures/**
+artifacts/**/*.log
+artifacts/**/*.out
+artifacts/**/*.err
+artifacts/**/*.pth
+artifacts/**/*.pt
+artifacts/**/*.ckpt
+artifacts/**/*.tar
+artifacts/**/*.tar.gz
+artifacts/**/*.zip
+artifacts/**/*.tmp
+artifacts/**/*.whl
+artifacts/tmp_validation/
+artifacts/wheels/
+artifacts/wheelhouse*/
+artifacts/runs/
+artifacts/data_downloads/
+artifacts/scheduled/
+
+# Reference repos
+external/*
+!external/README.md
+
+# Reference papers
+ICCV2025_TinyViM.pdf
+references/papers/*
+!references/README.md
+!references/reference_manifest.json
+
+# Training outputs
+code/tinyvim/detection/work_dirs/
+code/tinyvim/detection/pretrain/
+logs/
+*.log
+*.out
+*.err
+
+# Local scratch/render outputs
+output/
+tmp_thesis/
+
+# LaTeX
+paper/build/
+paper/*.aux
+paper/*.bbl
+paper/*.bcf
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.lof
+paper/*.log
+paper/*.lot
+paper/*.out
+paper/*.run.xml
+paper/*.synctex.gz
+paper/*.toc

@@ -1,0 +1,8 @@
+label,run_id,host,status,include_main,best_epoch,latest_epoch,note,best_AP,latest_AP,best_AP50,latest_AP50,best_AP75,latest_AP75,best_AP_S,latest_AP_S,best_AP_M,latest_AP_M,best_AP_L,latest_AP_L
+TinyViM-B,fat_tinyvim1x_stable_20260428_124251,Fat,complete,True,12,32,,0.204,0.197,0.345,0.333,0.208,0.201,0.124,0.119,0.304,0.295,0.347,0.342
+HybridMamba-Base,fat_hybridmamba_base1x_stable_copyfix_20260429_1323,Fat,complete,True,12,32,,0.202,0.197,0.339,0.33,0.211,0.204,0.122,0.119,0.304,0.298,0.343,0.341
+HybridMambaDet,fat_hybridmambadet1x_stable_20260425_1050,Fat,complete,True,12,32,,0.204,0.199,0.344,0.335,0.212,0.204,0.125,0.119,0.303,0.296,0.324,0.309
+Fusion alpha=1.0,fat_hybridmambadet_fusion10_stable_retry_20260429_2045,Fat,stopped,True,12,25,stopped on request; best epoch 12 and latest epoch 25 are both below the main Fat baseline,0.203,0.202,0.341,0.34,0.213,0.21,0.123,0.122,0.301,0.299,0.33,0.324
+Stage shallow,local_hybridmambadet_stage01_stable_20260429_052416_a1,Local,stopped,False,13,27,stopped on request; resumed evidence is clearly negative,0.202,0.195,0.339,0.33,0.21,0.201,0.122,0.119,0.299,0.289,0.338,0.308
+TinyViM-B local best,local_tinyvim1x_stable_adaptive_mem22_20260428_143121,Local,partial,False,9,13,"best absolute local checkpoint, not used as main Fat-comparable evidence",0.208,0.203,0.355,0.345,0.211,0.207,0.126,0.126,0.307,0.304,0.326,0.299
+Fusion alpha=0.5,local_hybridmambadet_fusion05_stable_20260430_0100_a1,Local,complete,False,13,33,early stopped at epoch 33; strongest local-only Mamba ablation point so far,0.206,0.201,0.342,0.334,0.218,0.214,0.127,0.123,0.307,0.3,0.327,0.31

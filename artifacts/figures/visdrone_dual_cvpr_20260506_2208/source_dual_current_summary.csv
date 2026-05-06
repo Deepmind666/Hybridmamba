@@ -1,0 +1,3 @@
+method,n_val_epochs,first_epoch,latest_epoch,latest_AP,latest_AP50,latest_AP75,best_epoch,best_AP,best_AP50,best_AP75,best_AP_S,best_AP_M,best_AP_L
+TinyViM-B + RetinaNet,100,1,100,19.9,33.2,20.9,69,22.6,37.3,23.5,14.9,32.9,31.6
+MobileMamba-B1 + RetinaNet,62,1,62,12.1,21.9,12.0,42,12.3,22.5,11.7,4.7,21.2,29.5

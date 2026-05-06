@@ -1,0 +1,3 @@
+series,best_epoch_top1,best_top1,best_epoch_top5,best_top5,last_epoch,last_top1,last_top5
+TinyViM-B,298,81.21400228790283,297,95.45000247558593,299,81.18800255187988,95.39000257049561
+MobileMamba-B1,294,79.948,294,94.934,294,79.948,94.934
