@@ -47,6 +47,21 @@ export LMDB_WRITE_FREQUENCY="$WriteFrequency"
 export LMDB_FORCE_REBUILD="$force"
 cd "$remoteRootWsl/external/mobilemamba"
 "$remoteMicromamba" run -p "$remoteEnv" python - <<'PY'
+import importlib.util
+import subprocess
+import sys
+
+if importlib.util.find_spec("lmdb") is None:
+    print("lmdb is missing; installing into the MobileMamba environment")
+    wheelhouse = "$remoteRootWsl/artifacts/wheels"
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-index", "--find-links", wheelhouse, "lmdb"])
+    except subprocess.CalledProcessError:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "lmdb"])
+else:
+    print("lmdb is already available")
+PY
+"$remoteMicromamba" run -p "$remoteEnv" python - <<'PY'
 import os
 import os.path as osp
 import pickle

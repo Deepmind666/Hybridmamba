@@ -10,6 +10,8 @@ param(
     [int]$TorchNumThreads = 2,
     [int]$InteropThreads = 1,
     [int]$Niceness = 5,
+    [ValidateSet("SshKeepAlive", "Tmux")]
+    [string]$LaunchMode = "SshKeepAlive",
     [switch]$DryRun
 )
 
@@ -44,13 +46,18 @@ if (-not $RunId) {
 }
 $RunId = [regex]::Replace($RunId, '[^A-Za-z0-9._-]', '_')
 
-$readyScript = "test -f '$DataRootWsl/train.lmdb/data.mdb' && test -f '$DataRootWsl/val.lmdb/data.mdb' && echo ready || echo missing"
-$ready = ssh FatMachine "wsl -d Ubuntu-24.04 -u ns3user -- bash -lc `"$readyScript`""
+$readyRemote = @"
+`$cmd = 'test -f "$DataRootWsl/train.lmdb/data.mdb" && test -f "$DataRootWsl/val.lmdb/data.mdb" && echo ready || echo missing'
+& wsl.exe -d Ubuntu-24.04 -u ns3user --exec bash -lc `$cmd
+"@
+$readyEncoded = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($readyRemote))
+$ready = ssh FatMachine "powershell -NoProfile -EncodedCommand $readyEncoded"
 if (($ready -notmatch "ready") -and -not $DryRun) {
     throw "LMDB data is not ready on Fat: $DataRootWsl. Run scripts\prepare_imagenet_lmdb_fat.ps1 first."
 }
 
 $runRootWin = Join-Path $RemoteRoot "artifacts\runs\$RunId"
+$localRunRoot = Join-Path "C:\mamba\artifacts\runs" $RunId
 $runRootWsl = Convert-WindowsPathStringToWsl $runRootWin
 $epochFull = $Epochs
 $warmupEpochs = if ($Epochs -ge 300) { 20 } else { [Math]::Max(5, [Math]::Round($Epochs * 0.07)) }
@@ -99,6 +106,7 @@ cd "$remoteRootUnix/external/mobilemamba"
 exec nice -n $Niceness "$remoteMicromamba" run -p "$remoteEnv" python run.py -c "$ConfigPath" -m train $optArgLine > "$runRootWsl/launcher.log" 2>&1
 "@
 [System.IO.File]::WriteAllText($localLauncherSh, ($launcher -replace "`r`n", "`n"), [System.Text.Encoding]::ASCII)
+New-Item -ItemType Directory -Force -Path $localRunRoot | Out-Null
 
 Write-Host "MobileMamba-B1 LMDB accelerated training on Fat"
 Write-Host ("Run id        {0}" -f $RunId)
@@ -107,6 +115,7 @@ Write-Host ("Data WSL      {0}" -f $DataRootWsl)
 Write-Host ("Batch size    {0}" -f $BatchSize)
 Write-Host ("Workers       {0}" -f $NumWorkersPerGpu)
 Write-Host ("Effective lr  {0}" -f $effectiveLr)
+Write-Host ("Launch mode   {0}" -f $LaunchMode)
 Write-Host "ETA           after LMDB is ready, expect data wait to drop substantially; first epoch target under about 1 hour if I/O is fixed"
 if ($DryRun) {
     Write-Host ("Local staged  {0}" -f $localLauncherSh)
@@ -117,6 +126,31 @@ if ($DryRun) {
 scp $localLauncherSh ("FatMachine:" + $remoteLauncherSh.Replace("\", "/")) | Out-Null
 if ($LASTEXITCODE -ne 0) {
     throw "Failed to copy MobileMamba LMDB launcher to Fat"
+}
+if ($LaunchMode -eq "SshKeepAlive") {
+    $keepAlive = Join-Path $localRunRoot "run_fat_training_keepalive.ps1"
+    $keepAliveOut = Join-Path $localRunRoot "ssh_keepalive.out.log"
+    $keepAliveErr = Join-Path $localRunRoot "ssh_keepalive.err.log"
+    $keepAliveScript = @"
+`$ErrorActionPreference = 'Stop'
+& ssh FatMachine "wsl -d Ubuntu-24.04 -u ns3user --exec bash $launcherShWsl"
+exit `$LASTEXITCODE
+"@
+    [System.IO.File]::WriteAllText($keepAlive, ($keepAliveScript -replace "`r`n", "`n"), [System.Text.Encoding]::ASCII)
+    $proc = Start-Process -FilePath "powershell.exe" `
+        -ArgumentList @("-NoProfile", "-ExecutionPolicy", "Bypass", "-File", $keepAlive) `
+        -WindowStyle Hidden `
+        -RedirectStandardOutput $keepAliveOut `
+        -RedirectStandardError $keepAliveErr `
+        -PassThru
+    Start-Sleep -Seconds 8
+    if (-not (Get-Process -Id $proc.Id -ErrorAction SilentlyContinue)) {
+        throw "Fat MobileMamba SSH keepalive process exited immediately; see $keepAliveErr"
+    }
+    Write-Host "Launched Fat LMDB training via local SSH keepalive."
+    Write-Host ("Local keepalive pid {0}" -f $proc.Id)
+    Write-Host ("Local logs          {0}" -f $localRunRoot)
+    return
 }
 $remoteLaunch = @"
 `$session = 'mamba_$RunId'
