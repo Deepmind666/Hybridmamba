@@ -5,6 +5,8 @@ param(
     [string]$RunId = "",
     [int]$LmdbWorkers = 8,
     [int]$WriteFrequency = 5000,
+    [ValidateSet("SshKeepAlive", "ScheduledTask")]
+    [string]$LaunchMode = "SshKeepAlive",
     [switch]$ForceRebuild,
     [switch]$DryRun
 )
@@ -20,9 +22,12 @@ $remoteEnv = "$remoteRootWsl/.mamba-env-cu128"
 $remoteMicromamba = "$remoteRootWsl/artifacts/tools/micromamba"
 $sourceRootWsl = "/mnt/c/Users/sshuser/data/imagenet"
 $remoteRunRootWin = Join-Path $RemoteRootWin "artifacts\data_prep\$RunId"
+$localRunRoot = Join-Path "C:\mamba\artifacts\data_prep" $RunId
 $remoteLauncherWin = "C:\Users\sshuser\AppData\Local\Temp\prepare_lmdb_$RunId.sh"
 $localLauncher = Join-Path $env:TEMP ("prepare_lmdb_$RunId.sh")
 $remoteLauncherWsl = "/mnt/c/Users/sshuser/AppData/Local/Temp/prepare_lmdb_$RunId.sh"
+$remoteTaskLauncherWin = "C:\Users\sshuser\AppData\Local\Temp\launch_lmdb_$RunId.ps1"
+$localTaskLauncher = Join-Path $env:TEMP ("launch_lmdb_$RunId.ps1")
 
 $force = if ($ForceRebuild) { "1" } else { "0" }
 $launcher = @"
@@ -32,7 +37,7 @@ src="$sourceRootWsl"
 dst="$TargetRootWsl"
 run_root="/mnt/c/Users/sshuser/codex_runs/hybrid-mamba/artifacts/data_prep/$RunId"
 mkdir -p "`$run_root" "`$dst"
-exec > >(tee -a "`$run_root/prepare.log") 2>&1
+exec >> "`$run_root/prepare.log" 2>&1
 echo "[`$(date '+%F %T')] sync ImageNet folders to ext4"
 rsync -a --info=progress2 --partial "`$src/train/" "`$dst/train/"
 rsync -a --info=progress2 --partial "`$src/val/" "`$dst/val/"
@@ -94,11 +99,18 @@ PY
 echo "[`$(date '+%F %T')] ready: `$dst"
 "@
 [System.IO.File]::WriteAllText($localLauncher, ($launcher -replace "`r`n", "`n"), [System.Text.Encoding]::ASCII)
+$taskLauncher = @"
+`$ErrorActionPreference = 'Stop'
+Start-Process -FilePath 'wsl.exe' -ArgumentList @('-d', 'Ubuntu-24.04', '-u', 'ns3user', '--exec', 'bash', '$remoteLauncherWsl') -WindowStyle Hidden -Wait
+"@
+[System.IO.File]::WriteAllText($localTaskLauncher, ($taskLauncher -replace "`r`n", "`n"), [System.Text.Encoding]::ASCII)
+New-Item -ItemType Directory -Force $localRunRoot | Out-Null
 
 Write-Host "Fat ImageNet LMDB preparation"
 Write-Host ("Source        {0}" -f $SourceRootWin)
 Write-Host ("Target WSL    {0}" -f $TargetRootWsl)
 Write-Host ("Workers       {0}" -f $LmdbWorkers)
+Write-Host ("Launch mode   {0}" -f $LaunchMode)
 Write-Host "ETA           rsync + LMDB conversion commonly takes 3-8 hours for full ImageNet; resumable for folder sync"
 Write-Host "Resource note CPU/disk busy; do not overlap with latency-sensitive work if avoidable"
 if ($DryRun) {
@@ -107,17 +119,61 @@ if ($DryRun) {
     return
 }
 
-ssh FatMachine "powershell -NoProfile -Command `"New-Item -ItemType Directory -Force '$remoteRunRootWin' | Out-Null`"" | Out-Null
+$mkdirRemote = @"
+New-Item -ItemType Directory -Force '$remoteRunRootWin' | Out-Null
+"@
+$mkdirEncoded = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($mkdirRemote))
+ssh FatMachine "powershell -NoProfile -EncodedCommand $mkdirEncoded" | Out-Null
 scp $localLauncher ("FatMachine:" + $remoteLauncherWin.Replace("\", "/")) | Out-Null
 if ($LASTEXITCODE -ne 0) {
     throw "Failed to copy LMDB launcher to Fat"
 }
+scp $localTaskLauncher ("FatMachine:" + $remoteTaskLauncherWin.Replace("\", "/")) | Out-Null
+if ($LASTEXITCODE -ne 0) {
+    throw "Failed to copy scheduled-task launcher to Fat"
+}
+if ($LaunchMode -eq "SshKeepAlive") {
+    $keepAlive = Join-Path $localRunRoot "run_fat_keepalive.ps1"
+    $keepAliveOut = Join-Path $localRunRoot "ssh_keepalive.out.log"
+    $keepAliveErr = Join-Path $localRunRoot "ssh_keepalive.err.log"
+    $keepAliveScript = @"
+`$ErrorActionPreference = 'Stop'
+& ssh FatMachine "wsl -d Ubuntu-24.04 -u ns3user --exec bash $remoteLauncherWsl"
+exit `$LASTEXITCODE
+"@
+    [System.IO.File]::WriteAllText($keepAlive, ($keepAliveScript -replace "`r`n", "`n"), [System.Text.Encoding]::ASCII)
+    $proc = Start-Process -FilePath "powershell.exe" `
+        -ArgumentList @("-NoProfile", "-ExecutionPolicy", "Bypass", "-File", $keepAlive) `
+        -WindowStyle Hidden `
+        -RedirectStandardOutput $keepAliveOut `
+        -RedirectStandardError $keepAliveErr `
+        -PassThru
+    Start-Sleep -Seconds 8
+    if (-not (Get-Process -Id $proc.Id -ErrorAction SilentlyContinue)) {
+        throw "Fat SSH keepalive process exited immediately; see $keepAliveErr"
+    }
+    Write-Host "Started Fat LMDB preparation via local SSH keepalive."
+    Write-Host ("Local keepalive pid {0}" -f $proc.Id)
+    Write-Host ("Local logs          {0}" -f $localRunRoot)
+    Write-Host ("Remote log          {0}" -f (Join-Path $remoteRunRootWin "prepare.log"))
+    return
+}
 $remoteLaunch = @"
-`$session = 'prep_$RunId'
-& wsl.exe -d Ubuntu-24.04 -u ns3user -- tmux new-session -d -s `$session "bash '$remoteLauncherWsl'"
-if (`$LASTEXITCODE -ne 0) { throw "Failed to create tmux session: `$session" }
+`$taskName = 'HybridMambaPrep_$RunId'
+`$script = '$remoteTaskLauncherWin'
+`$action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument ('-NoProfile -ExecutionPolicy Bypass -File "' + `$script + '"')
+`$trigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(5)
+Register-ScheduledTask -TaskName `$taskName -Action `$action -Trigger `$trigger -Force | Out-Null
+Start-ScheduledTask -TaskName `$taskName
+Start-Sleep -Seconds 8
+`$task = Get-ScheduledTask -TaskName `$taskName
+`$info = Get-ScheduledTaskInfo -TaskName `$taskName
+if (`$task.State -ne 'Running') {
+    throw ("Fat scheduled task did not stay running: state={0}, lastTaskResult={1}" -f `$task.State, `$info.LastTaskResult)
+}
+Write-Output ("Started scheduled task {0}: state={1}" -f `$taskName, `$task.State)
 "@
 $encoded = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($remoteLaunch))
 ssh FatMachine "powershell -NoProfile -EncodedCommand $encoded" | Out-Null
-Write-Host "Started Fat LMDB preparation in tmux."
+Write-Host "Started Fat LMDB preparation via Windows Scheduled Task."
 Write-Host ("Remote log    {0}" -f (Join-Path $remoteRunRootWin "prepare.log"))
